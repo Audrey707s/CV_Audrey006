@@ -1,6 +1,7 @@
 /* 
    IMMANUELLA AUDREY SOEGITO — Portfolio JS
    script.js
+/*
 /* 1. SKILL BAR ANIMATION (Intersection Observer)
    Animasi ketika melakukan scroll di tampilan halaman
 -------------------------------------------------- */
