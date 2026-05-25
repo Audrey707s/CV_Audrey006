@@ -928,6 +928,7 @@ footer {
 
 /* RESPONSIVE
    ============================================= */
+
 @media (max-width: 900px) {
   nav { padding: 18px 24px; }
   .nav-links { gap: 18px; }
@@ -945,6 +946,7 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .nav-right { gap: 14px}
   .nav-links { display: none; }
   .hamburger { display: flex; }
   .mobile-menu { display: flex; }
