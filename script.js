@@ -165,21 +165,25 @@ function initNavShadow() {
 
 function initThemeToggle() {
 
-  const toggle =
-    document.getElementById('theme-toggle');
+  const toggle = document.getElementById('theme-toggle');
 
   if (!toggle) return;
 
   toggle.addEventListener('click', () => {
 
-    document.body.classList.toggle('light-mode');
+    const currentTheme =
+      document.documentElement.getAttribute('data-theme');
 
-    if (
-      document.body.classList.contains('light-mode')
-    ) {
-      toggle.textContent = '☾';
-    } else {
+    if (currentTheme === 'light') {
+
+      document.documentElement.setAttribute('data-theme', 'dark');
       toggle.textContent = '☀';
+
+    } else {
+
+      document.documentElement.setAttribute('data-theme', 'light');
+      toggle.textContent = '☾';
+
     }
 
   });
@@ -347,6 +351,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initReveal();
   initCursorGlow();
   initMobileNav();
-  
+  initHamburgerMenu();
 
 });
