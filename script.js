@@ -336,7 +336,6 @@ function initMobileNav() {
   });
 
 }
-
 /* INIT ALL */
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -350,7 +349,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initTypingEffect();
   initReveal();
   initCursorGlow();
-  initMobileNav();
+
   initHamburgerMenu();
+  initMobileNav();
 
 });
