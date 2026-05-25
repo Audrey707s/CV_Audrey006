@@ -228,7 +228,6 @@ function initTypingEffect() {
 /* ========================================
    SCROLL REVEAL
 ======================================== */
-
 function initReveal() {
 
   const reveals =
@@ -240,7 +239,7 @@ function initReveal() {
       entries.forEach((entry) => {
 
         if (entry.isIntersecting) {
-          entry.target.classList.add('active');
+          entry.target.classList.add('visible');
         }
 
       });
